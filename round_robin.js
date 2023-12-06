@@ -24,16 +24,18 @@ class Processo {
     }
   
     console.log(`Tempo total de execução: ${tempoTotal}`)
+    console.log(`${tempoTotal/processos.length}`)
   }
   
   // Exemplo de uso
   const processos = [
-    new Processo('P1', 6),
-    new Processo('P2', 4),
-    new Processo('P3', 8)
+    new Processo('P1', 10),
+    new Processo('P2', 30),
+    new Processo('P3', 20),
+    new Processo('P4', 40)
   ]
   
-  const quantum = 2
+  const quantum = 15
   
   roundRobin(processos, quantum)
   

@@ -50,11 +50,11 @@ class Banqueiro {
   }
   
   // Exemplo de uso
-  const recursosDisponiveis = [10, 5, 7];
+  const recursosDisponiveis = [2, 1, 0, 0];
   const processos = [
-    { recursosMaximos: [7, 5, 3], recursosAlocados: [0, 1, 0], recursosNecessarios: [3, 2, 2] },
-    { recursosMaximos: [3, 2, 2], recursosAlocados: [2, 0, 0], recursosNecessarios: [0, 0, 2] },
-    { recursosMaximos: [9, 0, 2], recursosAlocados: [3, 0, 2], recursosNecessarios: [0, 0, 2] }
+    { recursosMaximos: [7, 5, 3], recursosAlocados: [0, 0, 1, 0], recursosNecessarios: [2, 0, 0, 1] },
+    { recursosMaximos: [3, 2, 2], recursosAlocados: [2, 0, 0, 1], recursosNecessarios: [1, 0, 1, 0] },
+    { recursosMaximos: [9, 0, 2], recursosAlocados: [0, 1, 2, 0], recursosNecessarios: [2, 1, 0, 0] }
   ];
   
   const banqueiro = new Banqueiro(recursosDisponiveis, processos);
